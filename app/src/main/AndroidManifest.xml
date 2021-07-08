@@ -9,16 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Examen_Montanez">
-        <activity android:name="com.movil.eva_grupal.FormularioCelulares" android:label="Registrar Película"></activity>
-        <activity
-            android:name="com.movil.eva_grupal.MainActivity"
-            android:label="Película"
-            android:theme="@style/SplashTheme">
+        <activity android:name=".Pantallainicio" android:label="Menú">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".FormularioCelulares"
+            android:label="Película" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Película"
+            android:theme="@style/SplashTheme">
+
+
         </activity>
     </application>
 
