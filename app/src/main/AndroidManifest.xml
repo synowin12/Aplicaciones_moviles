@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Examen_Montanez"
         android:usesCleartextTraffic="true">
-        <activity android:name=".mapaActivity"></activity>
+        <activity android:name=".mapa2Activity"></activity>
+        <activity android:name=".mapaActivity" />
         <activity
             android:name=".Pantallainicio"
             android:label="Menú">
@@ -25,11 +26,12 @@
         </activity>
         <activity
             android:name=".FormularioCelulares"
-            android:label="Película" />
+            android:label="Película"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:label="Película"
-            android:theme="@style/SplashTheme"></activity>
+            android:theme="@style/SplashTheme" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

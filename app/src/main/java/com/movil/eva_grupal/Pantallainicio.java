@@ -8,8 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Pantallainicio extends AppCompatActivity {
-    Button btnAdministrar, btnUbicacion;
-
+    Button btnAdministrar, btnUbicacion, btnmiubicacion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +33,15 @@ public class Pantallainicio extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Pantallainicio.this, mapaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnmiubicacion= findViewById(R.id.btnmiUbi);
+        btnmiubicacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Pantallainicio.this, mapa2Activity.class);
                 startActivity(intent);
             }
         });

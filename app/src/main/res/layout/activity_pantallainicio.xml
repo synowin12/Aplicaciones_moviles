@@ -22,15 +22,15 @@
 
     <Button
         android:id="@+id/btnUbicacion"
-        android:layout_width="144dp"
+        android:layout_width="155dp"
         android:layout_height="53dp"
         android:layout_marginStart="161dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="162dp"
         android:backgroundTint="#ffd05b"
-        android:drawableLeft="@drawable/ubicacion"
-        android:paddingLeft="-3dp"
-        android:text="Ubicación"
+        android:drawableLeft="@drawable/ubipuesto"
+        android:paddingLeft="7dp"
+        android:text="Ubicación del Puesto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -64,4 +64,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnmiUbi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Mi Ubicación"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#ffd05b"
+        android:drawableLeft="@drawable/miubi"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdministrar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
