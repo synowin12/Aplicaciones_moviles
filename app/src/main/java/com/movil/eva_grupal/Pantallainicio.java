@@ -8,13 +8,18 @@ import android.view.View;
 import android.widget.Button;
 
 public class Pantallainicio extends AppCompatActivity {
-    Button btnAdministrar;
+    Button btnAdministrar, btnUbicacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantallainicio);
 
+
+        asignarReferencias();
+
+    }
+    private void asignarReferencias(){
         btnAdministrar=findViewById(R.id.btnAdministrar);
         btnAdministrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,5 +29,14 @@ public class Pantallainicio extends AppCompatActivity {
 
             }
         });
+        btnUbicacion=findViewById(R.id.btnUbicacion);
+        btnUbicacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Pantallainicio.this, mapaActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }
